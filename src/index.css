@@ -1,13 +1,178 @@
-body {
+* {
+  background-color: rgb(230, 169, 219);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*==================================================MAIN=====================================================================================*/
+
+.rules {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10%;
+}
+
+/*==================================================GanYu=====================================================================================*/
+
+.ganYu {
+  display: block;
+  height: 700px;
+  padding-left: 10%;
+}
+
+/*=========================================================================GanYuVoice=======================================================*/
+
+.GanYuVoice {
+  font-size: 2em;
+  color: rgb(177, 16, 226);
+  border: 3px solid rgb(183, 46, 46);
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 10%;
+}
+
+.buttonsLast {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
+}
+
+.ganYuButton {
+  border: 4px solid #c84f4f;
+  padding: 3%;
+  border-radius: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+  font-weight: 700;
+  color: #c84f4f;
+  font-size: 1.2em;
+}
+
+.ganYuButton:hover {
+  border: 4px solid rgb(124, 11, 11);
+  color: #df396e;
+  transform: scale(1.1);
+}
+
+/*==============================================================GanYuPoint==================================================================*/
+
+.GanYuPoints .point {
+  height: 100px;
+  padding-left: 2%;
+  opacity: 0.4;
+}
+
+.GanYuPoints .pointColor {
+  height: 100px;
+  padding-left: 2%;
+  opacity: 0.4;
+}
+
+.GanYuPoints {
+  padding-top: 5%;
+  padding-left: 34%;
+}
+
+/*===================================================================GITTEST====================================================================*/
+
+.testTitle {
+  font-size: 4em;
+  color: #df396e;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.testExp {
+  color: #dc5516;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+
+/*====================================================================QUESTIONS==========================================================*/
+
+.questions {
+  color: #df396e;
+  font-weight: bold;
+  font-size: 1.6em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.answers {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.answerButton {
+  outline: none;
+  border: 3px solid rgb(183, 46, 46);
+  padding: 1%;
+  font-size: 1em;
+  color: #d1652f;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.answerButton:hover {
+  font-size: 1.1em;
+  color: #ff6200;
+}
+
+/*===============================================================GRATZ===================================================================*/
+
+.gratzTitle {
+  color: #df396e;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4em;
+  padding-top: 5%;
+}
+
+.gratzExp {
+  padding-top: 5%;
+  color: #df396e;
+  font-size: 2em;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.gratzResult {
+  padding-top: 8%;
+  text-align: center;
+  color: #ff6200;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.resultNumber {
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 8%;
+  padding: 2%;
+  text-align: center;
+  color: #ff6200;
+  font-weight: bold;
+  font-size: 1.8em;
+  border: 6px solid #de1818;
+  border-radius: 15px;
 }
