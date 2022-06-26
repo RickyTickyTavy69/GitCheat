@@ -42,9 +42,12 @@
 .buttonsLast {
   display: flex;
   justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
   padding-top: 10%;
+}
+
+.buttonsLast a {
+  text-decoration: none;
+  text-align: center;
 }
 
 .ganYuButton {
@@ -80,7 +83,8 @@
 
 .GanYuPoints {
   padding-top: 5%;
-  padding-left: 34%;
+  display: flex;
+  justify-content: center;
 }
 
 /*===================================================================GITTEST====================================================================*/
@@ -175,4 +179,102 @@
   font-size: 1.8em;
   border: 6px solid #de1818;
   border-radius: 15px;
+}
+
+/*========================================================RESPONSIVE==============================================================*/
+
+@media (max-width: 1800px) {
+  .buttons {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .ganYuButton {
+    font-size: 1em;
+  }
+  .GanYuVoice {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 1670px) {
+  .buttons {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .buttonsLast .ganYuButton {
+    font-size: 0.8em;
+  }
+  .ganYuButton {
+    font-size: 1em;
+  }
+  .GanYuVoice {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 1450px) {
+  .buttons {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.2em;
+  }
+  .buttonsLast {
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.2em;
+  }
+  .ganYuButton {
+    margin-top: 5%;
+  }
+  .ganYu {
+    display: block;
+    height: 500px;
+    padding-left: 10%;
+  }
+  .GanYuVoice {
+    font-size: 1.3em;
+  }
+  /*=====GITTEST*/
+  .testTitle {
+    font-size: 3.4em;
+  }
+  .testExp {
+    font-size: 1.4em;
+  }
+  .questions {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 1140px) {
+  .ganYu {
+    height: 400px;
+    padding-left: 5%;
+  }
+  /*===GITTEST*/
+
+  .answers {
+    padding-top: 7%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .GanYuPoints {
+    padding-top: 10%;
+    gap: 1%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ganYu {
+    height: 400px;
+    padding-left: 0;
+    margin-right: 5%;
+  }
+  .rules {
+    margin-left: 5%;
+    padding-right: 3%;
+  }
 }

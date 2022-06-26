@@ -15,12 +15,6 @@ const GanYuVoice = () => {
   } = useSwitchVoice();
   const [buttonText1, setButtonText1] = useState("Let's gooo");
   const [buttonText2, setButtonText2] = useState("No, not today");
-  //const location = useLocation();
-
-  /*useEffect(() => {
-    console.log("location", location.pathname);
-    setUpdate(1);
-  }, [location.pathname]);*/
 
   useEffect(() => {
     if (actualVoice !== voice1) {
@@ -46,8 +40,8 @@ const GanYuVoice = () => {
             </button>
           )}
           {actualVoice === voice15 && (
-            <Link to={"/mkTest/12345"}>
-              <button className="ganYuButton">{buttonText1}</button>
+            <Link className="ganYuButton" to={"/mkTest/12345"}>
+              {buttonText1}
             </Link>
           )}
           <button
