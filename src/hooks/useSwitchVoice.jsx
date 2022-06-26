@@ -26,11 +26,7 @@ const useSwitchVoice = () => {
   const [actualVoice, setActualVoice] = useState(voice1);
 
   const looseHandler = () => {
-    if (actualVoice === voice15) {
-      setActualVoice(voice1);
-    } else {
-      setLooser(true);
-    }
+    setActualVoice(voice1);
   };
 
   const switchVoice = () => {

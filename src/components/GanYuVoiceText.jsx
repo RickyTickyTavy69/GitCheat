@@ -4,15 +4,8 @@ import useSwitchVoice from "../hooks/useSwitchVoice";
 
 const GanYuVoice = () => {
   const [buttonsClasses, setButtonsClasses] = useState("buttons");
-  const {
-    actualVoice,
-    switchVoice,
-    voice1,
-    voice15,
-    looseHandler,
-    looser,
-    mkTest,
-  } = useSwitchVoice();
+  const { actualVoice, switchVoice, voice1, voice15, looseHandler } =
+    useSwitchVoice();
   const [buttonText1, setButtonText1] = useState("Let's gooo");
   const [buttonText2, setButtonText2] = useState("No, not today");
 
@@ -30,7 +23,6 @@ const GanYuVoice = () => {
 
   return (
     <>
-      {/*mkTest && <Redirect to="/mkTest" />*/}
       <div className="voice">
         <p className="GanYuVoice">{actualVoice}</p>
         <div className={buttonsClasses}>
